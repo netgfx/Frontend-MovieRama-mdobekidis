@@ -5,6 +5,7 @@ Features:
     - Search
     - Details
 
+To run `npm run dev`
 
 Notes:
 
