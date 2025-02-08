@@ -1,0 +1,26 @@
+{
+  "name": "videorama-mdobekidis",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run serve\" \"npm run watch\"",
+    "serve": "serve src --cors -l 3000",
+    "watch": "nodemon --watch src --ext html,css,js --exec \"npm run serve\"",
+    "build": "npm run copy-html && npm run copy-css && npm run build-js",
+    "dev": "nodemon --watch src -e html,js,css --exec \"npm run serve\"",
+    "copy-html": "cp src/index.html dist/",
+    "copy-css": "cp src/styles.css dist/",
+    "build-js": "babel src/script.js -o dist/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9",
+    "serve": "^14.2.4"
+  }
+}

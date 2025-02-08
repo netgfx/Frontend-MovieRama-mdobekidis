@@ -1,0 +1,57 @@
+
+
+.close-details{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    color: #fec72c;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.movie-details {
+    position: relative;
+    display:none;
+    padding: 12px;
+    padding-top: 40px;
+}
+
+.expanded > .movie-details {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    width: 100%;
+}
+
+.similar {
+    max-width: 120px;
+}
+
+.similar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+}
+
+.review-container {
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.review {
+   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.similar-movie-info {
+    padding: 4px;
+}
